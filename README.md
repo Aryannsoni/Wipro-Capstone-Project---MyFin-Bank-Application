@@ -37,7 +37,7 @@ Admin → “Admin” (user side), “You (Admin)” (admin side)
 Clean chat UI with timestamps
 
 🏗️ Tech Stack
-Frontend
+#Frontend
 
 React.js
 
@@ -47,7 +47,7 @@ React Router
 
 CSS
 
-Backend
+#Backend
 
 Spring Boot
 
@@ -57,7 +57,7 @@ Spring Security
 
 JWT Authentication
 
-Database
+#Database
 
 MySQL
 
@@ -89,7 +89,9 @@ com.myfinbank/
  ├── dto/
  ├── security/
  └── config/
+ 
 🔄 Application Flow
+
 User Action (React UI)
         ↓
 Axios API Call
@@ -105,6 +107,7 @@ MySQL Database
 Response (JSON)
         ↓
 React UI Update
+
 🔐 Authentication
 
 JWT-based authentication
@@ -113,30 +116,8 @@ Token stored in localStorage
 
 Secure API access using Authorization headers
 
-💬 Chat Module Working
-Flow:
-
-User sends message → stored in DB
-
-Admin fetches messages → replies
-
-Messages displayed based on senderId
-
-Message Identification:
-
-User side:
-
-Own message → You
-
-Admin message → Admin
-
-Admin side:
-
-Own message → You (Admin)
-
-User message → User
-
 ⚙️ Setup Instructions
+
 🔹 Backend Setup
 cd backend
 mvn clean install
@@ -150,6 +131,8 @@ spring.datasource.password=yourpassword
 
 spring.jpa.hibernate.ddl-auto=update
 server.port=8080
+
+
 🔹 Frontend Setup
 cd frontend
 npm install
@@ -158,6 +141,7 @@ npm start
 Runs on:
 
 http://localhost:3000
+
 📡 API Endpoints
 Auth
 
